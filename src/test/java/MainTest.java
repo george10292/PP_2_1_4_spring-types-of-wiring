@@ -17,7 +17,7 @@ public class MainTest {
 
     @Test
     public void mainTest() {
-        String text = "РќР° СЃРІРµС‚Рµ РµСЃС‚СЊ РѕРєРµР°РЅ , РЅР° РѕРєРµР°РЅРµ РѕСЃС‚СЂРѕРІ , РЅР° РѕСЃС‚СЂРѕРІРµ РґРµСЂРµРІРѕ , РЅР° РґРµСЂРµРІРµ Р·Р°СЏС† , РІ Р·Р°Р№С†Рµ СѓС‚РєР° , РІ СѓС‚РєРµ СЏР№С†Рѕ , РІ СЏР№С†Рµ РёРіРѕР»РєР° , СЃРјРµСЂС‚СЊ РљРѕС‰РµСЏ РЅР° РёРіР»Рµ :(";
+        String text = "На свете есть океан , на океане остров , на острове дерево , на дереве заяц , в зайце утка , в утке яйцо , в яйце иголка , смерть Кощея на игле :(";
 
         KoscheiTheDeathless koscheiTheDeathless =
                 applicationContext.getBean(KoscheiTheDeathless.class);
@@ -25,7 +25,7 @@ public class MainTest {
         String testText = koscheiTheDeathless.getRulesByDeth();
 
         if (!testText.contains(text) && testText.length() <= text.length()) {
-            Assert.fail("РўРµСЃС‚ РїСЂРѕРІР°Р»РµРЅ, РЅРµ РєРѕСЂСЂРµРєС‚РЅР°СЏ СЃРІСЏР·СЊ Р±РёРЅРѕРІ. РС‚РѕРіРѕРІР°СЏ С„СЂР°Р·Р° РЅРµ РІРµСЂРЅР°.");
+            Assert.fail("Тест провален, не корректная связь бинов. Итоговая фраза не верна.");
         }
     }
 

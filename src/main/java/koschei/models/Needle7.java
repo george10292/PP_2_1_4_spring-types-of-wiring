@@ -1,9 +1,17 @@
 package koschei.models;
 
-public class Needle7 {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
+public class Needle7 {
+    private Deth8 deth;
+    @Autowired
+    public void setDeth (Deth8 deth) {
+        this.deth = deth;
+    }
     @Override
     public String toString() {
-        return ", СЃРјРµСЂС‚СЊ РљРѕС‰РµСЏ РЅР° РёРіР»Рµ :( " + "";
+        return ", смерть Кощея на игле :( ";
     }
 }

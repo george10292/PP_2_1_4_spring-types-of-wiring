@@ -10,7 +10,7 @@ public class KoscheiTheDeathless {
     private Ocean1 ocean;
 
     public String getRulesByDeth() {
-        return "РќР° СЃРІРµС‚Рµ РµСЃС‚СЊ РѕРєРµР°РЅ , " + ocean.toString();
+        return "На свете есть океан , " + ocean.toString();
     }
 
     @Autowired
